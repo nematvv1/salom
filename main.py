@@ -8,9 +8,8 @@ from aiogram.types import Message
 
 load_dotenv()
 
-BOT_TOKEN = os.getenv("BOT_TOKEN")
-if not BOT_TOKEN:
-    raise ValueError("BOT_TOKEN topilmadi! .env faylini tekshiring.")
+BOT_TOKEN = os.getenv("BOT_TOKEN") or "8950461121:AAEt554fPm-geS6Mq7uTKc1a-fL5biAoNp4"
+
 
 bot = Bot(token=BOT_TOKEN)
 dp = Dispatcher()
